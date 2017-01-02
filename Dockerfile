@@ -1,6 +1,6 @@
 FROM java:8
 
-ENV FTB_INFINITY_URL http://www.creeperrepo.net/FTB2/modpacks%5EFTBInfinityLite110%5E1_3_3%5EFTBInfinityLite110Server.zip
+ENV FTB_INFINITY_URL https://www.feed-the-beast.com/projects/ftb-infinity-lite-1-10/files/2358891/download
 ENV LAUNCHWRAPPER net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
 
 RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
