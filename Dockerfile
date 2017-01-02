@@ -15,7 +15,7 @@ ADD eula.txt /opt/minecraft/eula.txt
 
 ENV MINECRAFT_VERSION 1.10.2
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
-ENV MINECRAFT_STARTUP_JAR FTBserver-1.10.2-12.18.2.2166-universal.jar
+ENV MINECRAFT_STARTUP_JAR FTBserver-1.10.2-12.18.3.2185-universal.jar
 
 VOLUME /opt/minecraft/world
 
