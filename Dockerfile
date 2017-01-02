@@ -1,6 +1,6 @@
 FROM java:8
 
-ENV FTB_INFINITY_URL https://www.feed-the-beast.com/projects/ftb-infinity-evolved/files/2320899/download
+ENV FTB_INFINITY_URL http://www.creeperrepo.net/FTB2/modpacks%5EFTBInfinityLite110%5E1_3_3%5EFTBInfinityLite110Server.zip
 ENV LAUNCHWRAPPER net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
 
 RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
@@ -13,9 +13,9 @@ RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
 
 ADD eula.txt /opt/minecraft/eula.txt
 
-ENV MINECRAFT_VERSION 1.7.10
+ENV MINECRAFT_VERSION 1.10.2
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
-ENV MINECRAFT_STARTUP_JAR FTBServer-1.7.10-1614.jar
+ENV MINECRAFT_STARTUP_JAR FTBserver-1.10.2-12.18.2.2166-universal.jar
 
 VOLUME /opt/minecraft/world
 
