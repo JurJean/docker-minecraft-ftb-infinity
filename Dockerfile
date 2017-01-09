@@ -7,7 +7,7 @@ RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
     unzip /tmp/infinity.zip -d /opt/minecraft && \
     mkdir -p /opt/minecraft/$(dirname libraries/${LAUNCHWRAPPER}) && \
     curl -S https://libraries.minecraft.net/$LAUNCHWRAPPER -o /opt/minecraft/libraries/$LAUNCHWRAPPER && \
-    curl -SL https://minecraft.curseforge.com/projects/dynmapforge/files/2307078/download -o /opt/minecraft/mods/Dynmap-2.3-forge-1.7.10.jar && \
+    curl -SL https://minecraft.curseforge.com/projects/dynmapforge/files/2307083/download -o /opt/minecraft/mods/Dynmap-2.3-forge-1.9.4.jar && \
     find /opt/minecraft -name "*.log" -exec rm -f {} \; && \
     rm -rf /opt/minecraft/ops.* /opt/minecraft/whitelist.* /opt/minecraft/logs/* /tmp/*
 
