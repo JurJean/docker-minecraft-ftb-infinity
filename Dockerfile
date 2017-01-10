@@ -12,6 +12,7 @@ RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
     rm -rf /opt/minecraft/ops.* /opt/minecraft/whitelist.* /opt/minecraft/logs/* /tmp/*
 
 ADD eula.txt /opt/minecraft/eula.txt
+ADD Start.sh /opt/minecraft/Start.sh
 
 ENV MINECRAFT_VERSION 1.10.2
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
@@ -22,4 +23,4 @@ VOLUME /opt/minecraft/world
 EXPOSE 25565
 EXPOSE 8123
 
-CMD bash /opt/minecraft/ServerStart.sh
+CMD bash /opt/minecraft/Start.sh
