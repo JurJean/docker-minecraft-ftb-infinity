@@ -1,6 +1,6 @@
 FROM java:8
 
-ENV FTB_INFINITY_URL https://www.feed-the-beast.com/projects/ftb-infinity-lite-1-10/files/2364245/download
+ENV FTB_INFINITY_URL https://www.feed-the-beast.com/projects/ftb-infinity-lite-1-10/files/2385786/download
 ENV LAUNCHWRAPPER net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
 
 RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
@@ -16,7 +16,7 @@ ADD Start.sh /opt/minecraft/Start.sh
 
 ENV MINECRAFT_VERSION 1.10.2
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
-ENV MINECRAFT_STARTUP_JAR FTBserver-1.10.2-12.18.3.2185-universal.jar
+ENV MINECRAFT_STARTUP_JAR FTBserver-1.10.2-12.18.3.2234-universal.jar
 
 VOLUME /opt/minecraft/world
 
